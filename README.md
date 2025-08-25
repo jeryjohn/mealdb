@@ -35,7 +35,7 @@ A Flutter application that integrates with [TheMealDB API](https://www.themealdb
 
 | Home Page | Search Results | Detailed Meal Page |
 |-----------|----------------|--------------------|
-| ![Home Page](homepage.jpg) | ![Search Results](searchresults.jpg) | ![Meal Details](detailed.jpg) |
+| ![Home Page](assets/images/homepage.jpg) | ![Search Results](assets/images/searchresults.jpg) | ![Meal Details](assets/images/detailed.jpg) |
 
 
 
