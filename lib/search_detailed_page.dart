@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:mealdb/search_provider.dart';
 import 'package:provider/provider.dart';
@@ -89,7 +87,10 @@ class SearchDetailedPage extends StatelessWidget {
                 ),
               ),
               ElevatedButton(
-                  onPressed: () async {}, child: Text('Watch Tutorial'))
+                  onPressed: () {
+                    context.watch<SearchProvider>().linkdir();
+                  },
+                  child: Text('Watch Tutorial'))
             ],
           ),
         ),
