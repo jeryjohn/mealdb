@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
     SearchProvider searchProvider = context.watch<SearchProvider>();
     return Scaffold(
         appBar: AppBar(
-          title: Text('Meal DB'),
+          title: const Text('Meal DB'),
           centerTitle: true,
           actions: [
             IconButton(
@@ -37,7 +37,7 @@ class _HomePageState extends State<HomePage> {
                     () {};
                   });
                 },
-                icon: Icon(Icons.refresh_rounded))
+                icon: const Icon(Icons.refresh_rounded))
           ],
         ),
         body: Column(
@@ -50,14 +50,14 @@ class _HomePageState extends State<HomePage> {
                       BoxDecoration(borderRadius: BorderRadius.circular(30)),
                   width: 200,
                   child: TextField(
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       border: OutlineInputBorder(),
                     ),
                     controller: context.watch<SearchProvider>().controller1,
                   ),
                 ),
                 searchProvider.isLoading
-                    ? Center(child: const CircularProgressIndicator())
+                    ? const Center(child: CircularProgressIndicator())
                     : IconButton(
                         onPressed: () async {
                           await searchProvider.searchPro();
@@ -66,14 +66,15 @@ class _HomePageState extends State<HomePage> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => SearchedItemPage()));
+                                    builder: (context) =>
+                                        const SearchedItemPage()));
                           });
                         },
-                        icon: Icon(Icons.fastfood_rounded))
+                        icon: const Icon(Icons.fastfood_rounded))
               ],
             ),
             provider.isLoading
-                ? Center(child: const CircularProgressIndicator())
+                ? const Center(child: CircularProgressIndicator())
                 : Expanded(
                     child: ListView.builder(
                       itemCount: provider.mealed?.categories?.length,
