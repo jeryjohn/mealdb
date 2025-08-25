@@ -37,7 +37,7 @@ A Flutter application that integrates with [TheMealDB API](https://www.themealdb
 |-----------|----------------|--------------------|
 | ![Home Page](homepage.jpg) | ![Search Results](searchresults.jpg) | ![Meal Details](detailed.jpg) |
 
-> Place your app screenshots inside a folder named `screenshots/` in the root of the repo with the filenames above.
+
 
 ---
 
